@@ -1,0 +1,71 @@
+
+ <div class="card">
+  
+    <!-- post title start -->
+    <div class="post-title d-flex align-items-center">
+        <!-- profile picture end -->
+        <div class="profile-thumb">
+            <a href="#">
+                <figure class="profile-thumb-middle">
+                    <img src="../../../assets/images/UploadedFile/logo.png"  alt="profile picture">
+                </figure>
+            </a>
+        </div>
+        <!-- profile picture end -->
+       
+    
+        <div class="posted-author">
+            <h6 class="author"><a href="profile.html">{{fname }} {{lastname}}</a></h6>
+            <span class="post-time">{{createAt}}</span>
+            
+
+           
+        </div>
+        <div style="margin-left: 150px;">
+        <input class="button1" type="submit" (click)="updatepost()" value="Edit">
+                    
+                 
+        <button class="button2" (click)="deletePost()" >Delete</button>
+      </div>
+    </div>
+
+   
+    <div class="post-content">
+          <b>{{title}}</b>
+        <p class="post-desc">
+            
+            {{postContant}}
+        </p>
+        <div class="post-thumb-gallery">
+            <figure class="post-thumb img-popup">
+                <a href="../../../assets/images/UploadedFile/{{images}}">
+                    <img src="../../../assets/images/UploadedFile/{{images}}"   alt="post image">
+                </a>
+            </figure>
+        </div>
+        <div class="post-meta" >
+            <button type="submit" class="post-comment" (click)="DisplayComments()">
+                <i class="bi bi-chat-bubble"></i>
+               <b> Display Comments</b>
+                <strong></strong>
+            </button>
+            <button  type="submit" class="post-comment" (click)="MyComment()" style="margin-left: 100px;">
+                <i class="bi bi-chat-bubble"></i>
+               <b> My Comment</b>
+                <strong></strong>
+            </button>
+            <ul class="comment-share-meta">
+                <li>
+                    <button type="submit" class="post-comment" (click)="CreateComment()">
+                        <i class="bi bi-chat-bubble"></i>
+                        
+                    </button>
+                </li>
+               
+            </ul>
+        </div>
+    </div>
+  
+</div>
+<br />
+<br />

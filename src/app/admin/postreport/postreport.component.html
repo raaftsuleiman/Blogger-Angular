@@ -1,0 +1,14 @@
+
+
+
+
+    <h2> <small>❤ Post Detalies ❤ :</small></h2>
+  
+  
+      <li class="table-row">
+
+      <app-postreporttable  *ngFor="let card of adminService.AllPostTable" [id]="card.id"  [title]="card.title" [createAt]="card.createAt" [image]="card.image"  [fname]="card.fname" [categoryTitle]="card.categoryTitle" [postContant]="card.postContant"></app-postreporttable>
+      </li>
+  
+    
+   

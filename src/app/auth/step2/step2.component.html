@@ -1,0 +1,83 @@
+<div class="all">
+    <div class="panda">
+        <div class="ear"></div>
+        <div class="face">
+          <div class="eye-shade"></div>
+          <div class="eye-white">
+            <div class="eye-ball"></div>
+          </div>
+          <div class="eye-shade rgt"></div>
+          <div class="eye-white rgt">
+            <div class="eye-ball"></div>
+          </div>
+          <div class="nose"></div>
+          <div class="mouth"></div>
+        </div>
+        <div class="body"> </div>
+       
+      
+      </div>
+      <form   [formGroup]="CreateForm">
+        <div class="hand"></div>
+        <div class="hand rgt"></div>
+        <h1>User Login</h1>
+        <div class="row">
+    <mat-form-field class="col-6">
+        
+        <div class="form-group">
+          <input  matInput  required="required" class="form-control"  formControlName="fname"/>
+          <label class="form-label">First Name  </label>
+        </div>
+      </mat-form-field>
+      <mat-form-field class="col-6">
+        <div class="form-group">
+            <input  matInput required="required" class="form-control"  formControlName="lastname"/>
+            <label class="form-label">Last Name  </label>
+          </div>
+        
+        </mat-form-field>
+    </div>
+    <div class="row">
+        <mat-form-field class="col-6">
+        <div class="form-group">
+          <input  matInput required="required" class="form-control"  formControlName="mobile"/>
+          <label class="form-label">mobile  </label>
+        </div>
+      
+      </mat-form-field> 
+       <mat-form-field class="col-6">
+      <div class="form-group">
+        <input  matInput required="required" class="form-control"  formControlName="email"/>
+        <label class="form-label">email  </label>
+      </div>
+    
+    </mat-form-field> 
+    </div>
+    <div class="row">
+
+        <!-- <mat-form-field class="col-6">
+            <div class="form-group">
+              <input  matInput required="required" class="form-control"  formControlName="roleName"/>
+              <label class="form-label">roleName  </label>
+            </div>
+          
+          </mat-form-field> 
+           <mat-form-field class="col-6">
+          <div class="form-group">
+            <input  matInput required="required" class="form-control"  formControlName="userid"/>
+            <label class="form-label">userid  </label>
+          </div>
+        
+        </mat-form-field>  -->
+    </div>
+    
+    <button class="btn"  (click)="save()" style="padding-left: 60px !important ;" >Step2 </button>
+   
+    
+      
+        
+      </form>
+    
+     
+    </div>
+    

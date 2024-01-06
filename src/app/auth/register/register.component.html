@@ -1,0 +1,83 @@
+<div class="all">
+<div class="panda">
+    <div class="ear"></div>
+    <div class="face">
+      <div class="eye-shade"></div>
+      <div class="eye-white">
+        <div class="eye-ball"></div>
+      </div>
+      <div class="eye-shade rgt"></div>
+      <div class="eye-white rgt">
+        <div class="eye-ball"></div>
+      </div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="body"> </div>
+   
+  
+  </div>
+  <form   [formGroup]="CreateForm" >
+    <div class="hand"></div>
+    <div class="hand rgt"></div>
+    <h1>Blog Login</h1>
+<mat-form-field>
+    <div class="form-group">
+      <input  matInput  required="required" class="form-control"  formControlName="username"/>
+      <label class="form-label">username  </label>
+    </div>
+  </mat-form-field>
+  <mat-form-field>
+    <div class="form-group">
+        <input type="password" matInput required="required" class="form-control"  formControlName="password"/>
+        <label class="form-label">password     
+        </label>
+      
+      </div>
+    </mat-form-field>
+    
+    <mat-form-field class="example-full-width">
+      <mat-label>Confirm Password</mat-label>
+      <input type="password" (change)="onchang()" matInput formControlName="confirmPasswordControl"  placeholder="123456">
+      <mat-error *ngIf="CreateForm.controls.confirmPasswordControl.hasError('mismatch')"> Password is not match </mat-error>
+      </mat-form-field>
+
+      
+     <mat-form-field>
+    <div class="form-group">
+      <input  matInput required="required" class="form-control"  formControlName="userid"   />
+      <label class="form-label" *ngFor="let item of this.LastId">Your User ID is  {{item.id}}  add it below </label>
+    </div>
+  
+  </mat-form-field> 
+
+ 
+  <!-- <mat-form-field>
+  <div class="form-group">
+    <input  matInput required="required" class="form-control"  formControlName="confirmPasswordControl"/>
+    <label class="form-label">Confirm password  </label>
+  </div>
+  <mat-error
+  *ngIf="!CreateForm.controls.confirmPasswordControl.hasError('required') && CreateForm.controls.confirmPasswordControl.value !=CreateForm.controls.password.value">
+  password and confirm password does not 
+  <strong>match</strong>
+  </mat-error> -->
+
+    
+
+
+
+
+
+  
+
+
+<button class="btn"  (click)="save()" style="padding-left: 60px !important ;" >Register </button>
+<button class="btn" (click)="goToLogin()"> Back to Login</button>
+
+  
+    
+  </form>
+
+ 
+</div>

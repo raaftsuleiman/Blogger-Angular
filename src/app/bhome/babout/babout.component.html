@@ -1,0 +1,141 @@
+
+		
+	<div class="colorlib-loader"></div>
+
+	<div id="page">
+		<nav class="colorlib-nav" role="navigation">
+			<div class="top-menu">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-2">
+							<div id="colorlib-logo"><a href="index.html">MY Blogger</a></div>
+						</div>
+						<div class="col-xs-10 text-right menu-1">
+							<ul>
+								<li ><a href="http://localhost:4200/">Home</a></li>
+								
+							
+								<li class="active"><a href="http://localhost:4200/About">About Me</a></li>
+								<li><a href="http://localhost:4200/ContactUs">Contact</a></li>
+								<li ><a href="http://localhost:4200/Login">Login</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>v>
+
+		<aside id="colorlib-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 breadcrumbs text-center">
+						<h2>About My Blogger</h2>
+					</div>
+				</div>
+			</div>
+		</aside>
+
+		<div id="colorlib-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<img class="img-responsive" src="https://uniquecontent.in/wp-content/uploads/2020/05/3_Blog-Writing.png" height="600px" alt="">
+					</div>
+					<div class="col-md-6">
+						<app-aboutcard *ngFor="let card of homeservice.AllAboutUs" [description]="card.description "  [id]="card.id "  [image]="card.image "></app-aboutcard>
+					
+					
+					</div>
+				</div>
+					
+					</div>
+				
+					</div>
+					<app-book></app-book>
+					
+		<div id="colorlib-instagram">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 colorlib-heading text-center">
+					<h2></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="instagram-entry">
+				
+					<app-categoriesimage *ngFor="let card of AllCategory" [image]="card.image"></app-categoriesimage>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<footer id="colorlib-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-4">
+						<h2>Navigational</h2>
+					
+							<ul class="colorlib-footer-links">
+								<li><a href="#"><i class="icon-check"></i> Home</a></li>
+								<li><a href="#"><i class="icon-check"></i> About Me</a></li>
+								<li><a href="#"><i class="icon-check"></i> Blog</a></li>
+								<li><a href="#"><i class="icon-check"></i> Travel</a></li>
+								<li><a href="#"><i class="icon-check"></i> Lifestyle</a></li>
+								<li><a href="#"><i class="icon-check"></i> Fashion</a></li>
+								<li><a href="#"><i class="icon-check"></i> Health</a></li>
+							</ul>
+					
+					</div>
+		
+					<div class="col-md-4">
+						<h2>Archive</h2>
+					
+							<ul class="colorlib-footer-links">
+								<li><a href="#"><i class="icon-check"></i> February 2018</a></li>
+								<li><a href="#"><i class="icon-check"></i> January 2018</a></li>
+								<li><a href="#"><i class="icon-check"></i> December 2017</a></li>
+								<li><a href="#"><i class="icon-check"></i> November 2017</a></li>
+								<li><a href="#"><i class="icon-check"></i> October 2017</a></li>
+								<li><a href="#"><i class="icon-check"></i> September 2017</a></li>
+							</ul>
+					
+					</div>
+					<div class="col-md-4">
+						<h2>Tags</h2>
+						<p class="tags">
+							<span><a href="#"><i class="icon-tag"></i> Modeling</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Fashion</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Life</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Blog</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Workout</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Vacation</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Travel</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Exercise</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Health</a></span>
+							<span><a href="#"><i class="icon-tag"></i> News</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Model</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Women</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Animals</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Nature</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Art</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Sea</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Ocean</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Office</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Home</a></span>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+
+

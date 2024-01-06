@@ -1,0 +1,339 @@
+body {
+    background: #F2F2F2;
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  .profile-card-1 {
+    width: 300px;
+    height: 390px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 4px 4px 10px #999;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .profile-card-1 .view-more {
+    position: absolute;
+    top: calc(50% - .5em);
+    left: calc(50% - .5em);
+    z-index: 2;
+    color: #2ECC71;
+    font-size: 2em;
+  }
+  .profile-card-1 .view-more .fa-plus-circle {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    width: 1.004em;
+  }
+  .profile-card-1 .view-more .fa-plus-circle:hover {
+    background:#bb82af;
+    color: white;
+  }
+  .profile-card-1 .popup {
+    height: 500px;
+    width: 500px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .profile-card-1 .mid-section {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    top: 200px;
+    left: 0;
+    padding: 10px 20px 0;
+    box-sizing: border-box;
+    background: white;
+  }
+  .profile-card-1 .mid-section .name {
+    color: #333333;
+    font-size: 1.4em;
+    padding-top: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+  }
+  .profile-card-1 .mid-section .description {
+    color: gray;
+    font-size: 0.9em;
+    padding-bottom: 5px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  .profile-card-1 .mid-section .description a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .profile-card-1 .mid-section .line {
+    background: #bb82af;
+    width: 80%;
+    height: 2px;
+    margin: 5px auto -3px;
+  }
+  .profile-card-1 .mid-section .stats {
+    display: flex;
+    position: absolute;
+    left: 10%;
+    padding-top: 10px;
+    width: 80%;
+    justify-content: space-around;
+  }
+  .profile-card-1 .mid-section .stats .stat {
+    font-size: 1.3em;
+    color: #333333;
+    padding: 5px;
+    font-weight: bold;
+  }
+  .profile-card-1 .mid-section .stats .subtext {
+    color: gray;
+    font-size: 0.6em;
+    font-weight: normal;
+  }
+  .profile-card-1 .img {
+    height: 130px;
+    width: 100%;
+    background-image: linear-gradient(rgba(238, 13, 137, 0.95), rgba(206, 114, 165, 0.95)), url("https://static.pexels.com/photos/21014/pexels-photo-medium.jpg");
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .profile-card-1 .img img {
+    width: 160px;
+    height: 160px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    position: absolute;
+    left: calc(50% - 84px);
+    top: 26px;
+  }
+  .profile-card-1 .img:after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    left: calc(50% - 91.5px);
+    top: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.4);
+  }
+  .profile-card-1 .img:before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    left: calc(50% - 95px);
+    top: 15.5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  .profile-card-1 .links {
+    width: 100%;
+    height: 50px;
+    background: #F2F2F2;
+    border-top: 1px solid #bb82af;
+    margin-top: 35px;
+    border-radius: 5px;
+    color: white;
+    font-size: 2em;
+    line-height: 1.5em;
+    position: absolute;
+    bottom: 0;
+  }
+  .profile-card-1 .links a {
+    color: white;
+  }
+  .profile-card-1 .links .fb {
+    position: absolute;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #3b5998;
+  }
+  .profile-card-1 .links .fb:hover {
+    background-color: #4264aa;
+  }
+  .profile-card-1 .links .twitter {
+    position: absolute;
+    left: 25%;
+    width: 25%;
+    height: 100%;
+    background-color: #55ACEE;
+  }
+  .profile-card-1 .links .twitter:hover {
+    background-color: #6cb7f0;
+  }
+  .profile-card-1 .links .follow {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background-color: #bb82af;
+  }
+  .profile-card-1 .links .follow:hover {
+    background-color: #bb82af;
+  }
+  
+  .profile-card-2 {
+    width: 250px;
+    height: 500px;
+    background: #bb82af;
+  }
+
+
+/*#3498db  edit   */
+/*#8e44ad  save   */
+/*#2ecc71    new  */
+/*#555555  cancel   */
+/*#c0392b  delete   */
+/* 1st alternate hover colors if hover inset shadow not working properly
+$gw-blue-dark: rgb(27, 79, 114); /*#1b4f72
+$gw-purple-dark: rgb(74, 35, 90);  /*#4a235a
+$gw-green-dark: rgb(29, 131, 72); /*#1d8348
+$black: rgb(0, 0, 0); /*#000000
+$gw-red-dark: rgb(123, 36, 28); /*#7b241c */
+.button {
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  display: inline-block;
+  color: #FFF;
+  border-radius: 0.25em;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.4);
+}
+
+.primary {
+  line-height: 40px;
+  transition: ease-in-out 0.2s;
+  padding: 0 16px;
+}
+
+.primary:hover, .condensed:hover, .touch:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), inset 0 0 0 99999px rgba(0, 0, 0, 0.2);
+}
+
+/* 2nd alternate hover colors if hover inset shadow not working properly 
+.edit:hover {
+  background: darken($gw-blue, 10%);
+}
+
+.save:hover {
+  background: darken($gw-purple, 10%);
+}
+
+.new:hover {
+  background: darken($gw-green, 10%);
+}
+
+.cancel:hover {
+  background: darken($gw-gray-5, 10%);
+}
+
+.delete:hover {
+  background: darken($gw-red, 10%);
+}
+*/
+.condensed {
+  transition: ease-in-out 0.2s;
+  line-height: 24px;
+  padding: 0 8px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.touch {
+  transition: ease-in-out 0.2s;
+  line-height: 40px;
+  width: 40px;
+  padding: 0px;
+  text-align: center;
+}
+
+.edit:before, .save:before, .new:before, .cancel:before, .delete:before {
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 1rem;
+  padding-right: 12px;
+  background: none;
+  color: #FFF;
+}
+
+.condensed.edit:before, .condensed.save:before, .condensed.new:before, .condensed.cancel:before, .condensed.delete:before {
+  content: none;
+}
+
+.touch.edit:before, .touch.save:before, .touch.new:before, .touch.cancel:before, .touch.delete:before {
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.inlineIcon.edit, .inlineIcon.save, .inlineIcon.new, .inlineIcon.cancel, .inlineIcon.delete {
+  background: transparent;
+}
+
+.inlineIcon.edit:before, .inlineIcon.save:before, .inlineIcon.new:before, .inlineIcon.cancel:before, .inlineIcon.delete:before {
+  line-height: 32px;
+  font-size: 32px;
+  padding: 4px 0px;
+}
+
+.edit {
+  background: #3498db;
+}
+.edit:before {
+  content: "";
+}
+
+.inlineIcon.edit:before {
+  color: #3498db;
+}
+
+.save {
+  background: #8e44ad;
+}
+.save:before {
+  content: "";
+}
+
+.inlineIcon.save:before {
+  color: #8e44ad;
+}
+
+.new {
+  background: #2ecc71;
+}
+.new:before {
+  content: "";
+}
+
+.inlineIcon.new:before {
+  color: #2ecc71;
+}
+
+.cancel {
+  background: #555555;
+}
+.cancel:before {
+  content: "";
+}
+
+.inlineIcon.cancel:before {
+  color: #555555;
+}
+
+.delete {
+  background: #c0392b;
+}
+.delete:before {
+  content: "";
+}
+
+.inlineIcon.delete:before {
+  color: #c0392b;
+}

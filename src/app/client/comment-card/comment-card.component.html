@@ -1,0 +1,20 @@
+<h2 mat-dialog-title>Comments</h2>
+<mat-dialog-content class="mat-typography"  >
+
+<div *ngFor="let card of client.getComments">
+  <!-- <h3>{{fname}}{{lastName}}</h3> -->
+
+
+  <b>{{card.fname}} {{card.lastName}}</b>
+  <br/>
+  <p>{{card.content}}</p>
+ 
+  <p>{{card.createAt}}</p>
+
+
+</div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+<button mat-button mat-dialog-close>Cancel</button>
+
+</mat-dialog-actions>

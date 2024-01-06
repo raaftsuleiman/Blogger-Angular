@@ -1,0 +1,76 @@
+<h2 mat-dialog-title>Create New Post</h2>
+<mat-dialog-content class="mat-typography">
+
+  <form [formGroup]="formGroup">
+
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input matInput formControlName="title" style="font-size: x-large;" placeholder="Title ">
+
+      </mat-form-field>
+
+
+
+      <mat-form-field class="example-full-width">
+        <mat-label>image</mat-label>
+        <input matInput formControlName="image" style="font-size: x-large;">
+
+
+        <div class="col-md-3">
+          <input type="file" #file placeholder="Choose Image" formControlName="image" (change)="uploadFile(file.files)"
+            style="display:none;" style="font-size: x-large;">
+          <button type="button" class="btn btn-success" (click)="file.click()">Upload Image</button>
+        </div>
+
+
+      </mat-form-field>
+
+
+    </div>
+
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>Say Some thing</mat-label>
+        <input matInput formControlName="postContant" style="font-size: x-large;">
+
+      </mat-form-field>
+
+
+
+
+
+    </div>
+
+    <div class="row">
+
+
+
+
+
+
+
+      <b>categore: 1-Flowers  2-Pepole  3-Funny  4-Architicture  5-sweet  6-place  7-studding  8-Love </b>
+      <mat-form-field class="example-full-width">
+        
+        <mat-label>Choose Number Between 1 And 8 </mat-label>
+        <input matInput formControlName="categoreId" style="font-size: x-large;"/>
+      </mat-form-field>
+
+
+
+
+
+    </div>
+
+
+
+
+
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button [disabled]="!formGroup.valid" mat-button [mat-dialog-close]="true" cdkFocusInitial
+    (click)="savePost()">Save</button>
+</mat-dialog-actions>

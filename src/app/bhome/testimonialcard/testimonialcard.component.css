@@ -1,0 +1,41 @@
+.paper{
+    height: 300px;
+    width: 600px;
+    margin: 50px auto;
+    background-color: #DDD;
+    position: relative;
+    overflow: hidden;
+}
+.paper::after{
+    content: '';
+    display: block;
+    border-width: 0px 75px 75px 0px;
+    border-style: solid;
+    border-color: #d7d7d7 transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.paper::after{
+    content: '';
+    display: block;
+    border-width: 0px 75px 75px 0px;
+    border-style: solid;
+    border-color: #d7d7d7 #FFF;
+    box-shadow: -5px 6px 10px rgb(129, 127, 127);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.paper > h1{
+    margin: 30px 210px;
+    font-family: cursive;
+}
+
+.paper > p{
+    padding: 0px 30px;
+    font-size: 20px;
+    font-family: cursive;
+    color: #555;
+}

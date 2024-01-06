@@ -1,0 +1,20 @@
+.neon {
+    animation: neonAnim 2s alternate-reverse infinite;
+    color: #C0175F;
+    font-family: Cursive;
+    font-size: 53px;
+}
+@keyframes neonAnim {
+from {
+    text-shadow:
+      0 0 34px rgba(192, 23, 95, .7),
+      0 0 64px rgba(192, 23, 95, .7),
+      0 0 124px rgba(192, 23, 95, .7);
+  }
+  to {
+    text-shadow:
+      0 0 29px rgba(192, 23, 95, .7),
+      0 0 44px rgba(192, 23, 95, .7),
+      0 0 84px rgba(192, 23, 95, .7);
+  }
+}

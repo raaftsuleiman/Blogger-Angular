@@ -1,0 +1,64 @@
+<h2 mat-dialog-title>Create New Post{{id}}</h2>
+<mat-dialog-content class="mat-typography">
+
+    <form [formGroup]="formGroup">
+
+        <div class="row">
+            <mat-form-field class="example-full-width">
+                <mat-label>First Name</mat-label>
+                <input matInput formControlName="fname" style="font-size: x-large;" placeholder="Title ">
+
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Last Name</mat-label>
+                <input matInput formControlName="lastname" style="font-size: x-large;" placeholder="Title ">
+
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Mobile</mat-label>
+                <input matInput formControlName="mobile" style="font-size: x-large;" placeholder="Title ">
+
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" style="font-size: x-large;" placeholder="Title ">
+
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>image</mat-label>
+                <input matInput formControlName="image" style="font-size: x-large;">
+
+
+                <div class="col-md-3">
+                    <input type="file" #file placeholder="Choose Image" formControlName="image"
+                        (change)="uploadFile(file.files)" style="display:none;" style="font-size: x-large;">
+                    <button type="button" class="btn btn-success" (click)="file.click()">Upload Image</button>
+                </div>
+
+
+            </mat-form-field>
+
+
+        </div>
+
+      
+
+
+
+
+
+
+
+
+
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button [disabled]="!formGroup.valid" mat-button [mat-dialog-close]="true" cdkFocusInitial
+        (click)="savePost()">Save</button>
+</mat-dialog-actions>

@@ -1,0 +1,214 @@
+<div class="colorlib-loader"></div>
+
+<div id="page">
+	<nav class="colorlib-nav" role="navigation">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="colorlib-logo"><a href="index.html">MY Blogger</a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li ><a href="http://localhost:4200/">Home</a></li>
+							
+						
+							<li ><a href="http://localhost:4200/About">About Me</a></li>
+							<li class="active"><a href="http://localhost:4200/ContactUs">Contact</a></li>
+							<li ><a href="http://localhost:4200/Login">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	
+
+		<div id="colorlib-container">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="heading-2">Contact Information</h2>
+						<div class="row contact-info-wrap row-pb-lg">
+							<div class="col-md-3">
+								<p><span><i class="icon-location-2"></i></span> 198 West 21th Street, <br> Suite 721 New York NY 10016</p>
+							</div>
+							<div class="col-md-3">
+								<p><span><i class="icon-phone3"></i></span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+							</div>
+							<div class="col-md-3">
+								<p><span><i class="icon-paperplane"></i></span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+							</div>
+							<div class="col-md-3">
+								<p><span><i class="icon-globe"></i></span> <a href="#">yourwebsite.com</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12">
+						<div class="row">
+							<div class="col-md-6">
+								<div id="map" class="colorlib-map"><img	src="../../../assets/images/UploadedFile/contact.jpg" ></div>
+							</div>
+							<div class="col-md-6">
+								<h2 class="heading-2"> ❤ Contact Us ❤  </h2>
+
+
+
+								
+
+
+								<form   [formGroup]="CreateForm" (submit)="save()">
+									
+									<div class="row form-group">
+										<div class="col-md-12">
+										<mat-form-field >
+									
+											<label for="fname">Twitter</label>
+											<input matInput type="text"id="email" class="form-control" style="width: 800%; background-color:rgb(252, 252, 253); border-style: double ; "  formControlName="twitter">
+											<mat-error *ngIf="CreateForm.controls.twitter.hasError('required')">
+											 <strong>required</strong>
+											</mat-error>
+										
+									
+
+									</mat-form-field>
+								</div>
+									</div>
+									<div class="row form-group">
+										<div class="col-md-12">
+									<mat-form-field  class="example-full-width">
+										
+
+											<label for="lname">Mobile number</label>
+											<input  matInput type="text" id="email"   style="width:  1000px !important; background-color:rgb(252, 252, 253); border-style: double;"  formControlName="contactMobile" >
+										
+										<mat-error *ngIf="CreateForm.controls.contactMobile.hasError('required')">
+											contactMobile is <strong>required</strong>
+										</mat-error>
+									</mat-form-field>
+								</div>
+									</div>
+
+									<div class="row form-group">
+										<div class="col-md-12">
+										<mat-form-field class="example-full-width" >
+										
+											<label for="email">facebook</label>
+											<input  matInput type="text" id="email" class="form-control" formControlName="facebook" style="width: 800%; ;  background-color:rgb(252, 252, 253); border-style: double;">
+											<mat-error *ngIf="CreateForm.controls.facebook.hasError('required')">
+												facebook is <strong>required</strong>
+											</mat-error>
+										
+									</mat-form-field>
+								</div>
+									</div>
+
+								
+
+									<div class="row form-group">
+										<div class="col-md-12">
+										<mat-form-field >
+										
+											<label for="message">Message</label>
+											<textarea matInput name="message" id="message"  style="width: 200px; background-color:rgb(252, 252, 253); border-style: double;"  rows="5" class="form-control" placeholder="Say something about us" formControlName="text"></textarea>
+										
+									</mat-form-field>
+								</div>
+									
+									</div>
+									<div class="form-group">
+
+										<button type="submit" [disabled]=!CreateForm.valid value="Send Message" (click)="save()"  class="btn btn-primary">Send Message</button>
+									</div>
+
+								</form>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<app-cfigure></app-cfigure>
+		<div id="colorlib-instagram">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 colorlib-heading text-center">
+					<h2>❤ MY Blogger For All World ❤</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="instagram-entry">
+				
+					<app-categoriesimage *ngFor="let card of AllCategory" [image]="card.image"></app-categoriesimage>
+
+				</div>
+			</div>
+		</div>
+		<footer id="colorlib-footer" role="contentinfo">
+			<div class="container">
+				<div class="row row-pb-md">
+					<div class="col-md-4">
+						<h2>Navigational</h2>
+					
+							<ul class="colorlib-footer-links">
+								<li><a href="#"><i class="icon-check"></i> Home</a></li>
+								<li><a href="#"><i class="icon-check"></i> About Me</a></li>
+								<li><a href="#"><i class="icon-check"></i> Blog</a></li>
+								<li><a href="#"><i class="icon-check"></i> Travel</a></li>
+								<li><a href="#"><i class="icon-check"></i> Lifestyle</a></li>
+								<li><a href="#"><i class="icon-check"></i> Fashion</a></li>
+								<li><a href="#"><i class="icon-check"></i> Health</a></li>
+							</ul>
+					
+					</div>
+		
+					<div class="col-md-4">
+						<h2>Archive</h2>
+					
+							<ul class="colorlib-footer-links">
+								<li><a href="#"><i class="icon-check"></i> February 2018</a></li>
+								<li><a href="#"><i class="icon-check"></i> January 2018</a></li>
+								<li><a href="#"><i class="icon-check"></i> December 2017</a></li>
+								<li><a href="#"><i class="icon-check"></i> November 2017</a></li>
+								<li><a href="#"><i class="icon-check"></i> October 2017</a></li>
+								<li><a href="#"><i class="icon-check"></i> September 2017</a></li>
+							</ul>
+					
+					</div>
+					<div class="col-md-4">
+						<h2>Tags</h2>
+						<p class="tags">
+							<span><a href="#"><i class="icon-tag"></i> Modeling</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Fashion</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Life</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Blog</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Workout</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Vacation</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Travel</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Exercise</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Health</a></span>
+							<span><a href="#"><i class="icon-tag"></i> News</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Model</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Women</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Animals</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Nature</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Art</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Sea</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Ocean</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Office</a></span>
+							<span><a href="#"><i class="icon-tag"></i> Home</a></span>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
+	</div>
+	

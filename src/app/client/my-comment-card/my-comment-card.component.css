@@ -1,0 +1,33 @@
+.button2 {
+    background-color: #cd4734; 
+    color: white; 
+    border: 2px solid 
+  }
+  
+  .button2:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .button2 {
+    border-radius: 13px;
+    font-size: 12px;
+    padding: 12px 14px;
+  }
+
+  .button1 {
+    background-color: #555555;; 
+    color: white; 
+    border: 2px solid 
+  }
+  
+  .button1:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .button1 {
+    border-radius: 13px;
+    font-size: 12px;
+    padding: 12px 14px;
+  }

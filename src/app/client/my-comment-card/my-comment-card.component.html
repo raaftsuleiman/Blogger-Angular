@@ -1,0 +1,25 @@
+<h2 mat-dialog-title>My Comments</h2>
+<mat-dialog-content class="mat-typography"  >
+
+<div *ngFor="let card of client.getCommentUser">
+  <!-- <h3>{{fname}}{{lastName}}</h3> -->
+
+
+  
+ 
+  <b>{{card.content}}</b>
+  <br/>
+  <p>{{card.createAt}}</p>
+ <br/>
+  <input class="button1" type="submit" (click)="EditComment()" value="Edit">
+                    
+                 
+  <button class="button2" (click)="DeleteComment()" >Delete</button>
+   
+
+</div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+<button mat-button mat-dialog-close>Cancel</button>
+
+</mat-dialog-actions>
